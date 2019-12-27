@@ -9,28 +9,40 @@
         width: 70%;
     }
 
+    .hero .hero-content {
+        padding-top: 60%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .hero .hero-content {
-        padding-top: 50%;
+        padding-top: 60%;
     }
 }
 
 /* Responsive nav kicks in */
 @media screen and (max-width: 991px) {
+    .site-title {
+        text-align: center;
+        font-size: 30px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
     header {
         width: 90%;
         padding-left: 25px;
     }
 
     .hero .hero-content {
-        padding-top: 50%;
+        padding-top: 60%;
     }
 
     .header-nav {
         position: fixed;
-        background-color: #000;
+        background-color: #e8ca6f;
         width: 100%;
         height: 100%;
         top: 0;
@@ -226,7 +238,7 @@
         padding: 0 20px;
     }
     
-    #eng-pics .img-wrap {
+    #misc-pics .img-wrap {
         border-radius: 0;
     }
 
@@ -254,10 +266,10 @@
 
 @media screen and (max-width: 640px) {
     .hero .hero-content {
-        padding-top: 100%;
+        padding-top: 110%;
     }
 
-    #eng-pics .img-wrap i {
+    #misc-pics .img-wrap i {
         font-size: 25px;
         position: absolute;
         width: 25px;
@@ -293,7 +305,7 @@
 
 @media screen and (max-width: 480px) {
     .hero .hero-content {
-        padding-top: 110%;
+        padding-top: 120%;
     }
     
     .hero .hero-content img {

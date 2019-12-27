@@ -247,12 +247,20 @@ Navigation
   transition: all 300ms ease-in-out;
 }
 
+.site-title {
+  color: white;
+  font-size: 22px;
+  margin-right: 75px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 /* ==========================================================================
 Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/hero-min.jpg') center center;
+  background: url('../img/jocelyn_hero_darker.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -271,18 +279,21 @@ Hero
     color: $txt-light;
     margin-bottom: 40px;
   }
-  p.intro {
+  p.about {
     color: $txt-light;
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 80px;
   }
   .hero-content {
-    padding-top: 40%;
+    padding-top: 50%;
   }
   .hero-content img {
     width: 55%;
     margin-bottom: 12%;
+  }
+  #hero-title {
+    color: white !important;
   }
 }
 .navigation {
@@ -293,7 +304,7 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  background-color: rgba(232, 202, 111, .91);
   z-index: 999;
   width: 100%;
 }
@@ -332,7 +343,7 @@ header {
         padding-right: 25px;
 
         &:hover {
-          color: $accent-color;
+          color: #5d627c;
         }
       }
       &:last-child a {
@@ -382,19 +393,19 @@ Social share buttons
 /* ==========================================================================
 Intro
 ========================================================================== */
-.intro span.icon {
+.about span.icon {
   font-size: 40px;
   color: $accent-color;
   font-weight: bold;
 }
-.intro-icon {
+.about-icon {
   display: inline-block;
   vertical-align: top;
   padding: 6px 0 0 0;
   margin-right: 20px;
   width: 40px;
 }
-.intro-content {
+.about-content {
   display: inline-block;
   width: 80%;
 }
@@ -439,13 +450,13 @@ Features-stack
     display: inline-block;
     width: 75%;
   }
-  .intro-icon {
+  .about-icon {
     display: inline-block;
     vertical-align: top;
     padding: 6px 0 0 0;
     margin-right: 20px;
   }
-  .intro-content {
+  .about-content {
     display: inline-block;
     width: 80%;
   }
@@ -568,6 +579,10 @@ Features-stack
   }
 }
 
+.schedule-row {
+  margin-bottom: 20px;
+}
+
 /* ==========================================================================
 .blog
 ========================================================================== */
@@ -645,18 +660,38 @@ Features-stack
 }
 
 /* ==========================================================================
-Instagram
+Yoga Group Landscape Photo
 ========================================================================== */
-#instagram {
-  img {
-    width: 100%;
-  }
+.landscape-yoga-section{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.landscape-yoga-container{
+  margin-left: 0 !important;
+}
+
+#landscape-yoga-crop {
+  width: 100vw;
+  // height: 400px; /* height of container */
+  overflow: hidden;
+  object-position: 20% 10px; 
+
+}
+
+#landscape-yoga-img {
+  width: 100%;
 }
 
 /* ==========================================================================
-Engagement Pics
+Miscellaneous Pics
 ========================================================================== */
-#eng-pics {
+.remove-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#misc-pics {
   img {
     width: 100%;
     height: auto;
@@ -723,134 +758,12 @@ Engagement Pics
 }
 
 /* ==========================================================================
-Embed video
+Social Buttons
 ========================================================================== */
-#video-bg {
-  height: 300px;
-}
-#video-content {
-  width: 100%;
-  height: 100%;
-  padding-top: 100px;
-  position: relative;
-  background: rgba(17, 17, 17, 0.5);
-  text-align: center;
-}
-#video-content h5 {
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 300;
-  letter-spacing: 10px;
-}
-#video-content p {
-  color: #ffffff;
-}
 
-/* ==========================================================================
-Google map
-========================================================================== */
-#map-canvas {
-  height: 500px;
-  width: 100%;
-}
-#map-content-wrapper {
-  position: relative;
-  margin-top: -502px;
-  margin-bottom: 150px;
-}
-#map-content {
-  margin-top: 40px;
-  padding: 50px 60px;
-  background: #fff;
-  -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
-  transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
-}
-#btn-show-content {
-  padding: 20px;
-  background: #fff;
-  cursor: pointer;
-  display: inline-block;
-  -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
-  transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
-}
-.toggle-map-content {
-  opacity: 0;
-  visibility: hidden;
-}
-.pointer-events-none {
-  pointer-events: none;
-}
-.pointer-events-auto {
-  pointer-events: auto;
-}
-
-/* ==========================================================================
-RSVP form
-========================================================================== */
-.rsvp {
-  padding-bottom: 140px;
-  .rsvp-form {
-    .rsvp-btn {
-      padding: 15px 0;
-      border-radius: 3px;
-      width: 100%;
-      font-size: 13px;
-    }
-    .form-input-group {
-      width: 100%;
-      height: 55px;
-      margin: 0 auto 10px;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      border: solid 1px $keyline-color;
-      text-align: left;
-      position: relative;
-
-      i {
-        color: $accent-color;
-        font-size: 14px;
-      }
-      i:after {
-        content: "";
-        height: 30px;
-        width: 1px;
-        border-right: solid 1px $keyline-color;
-        position: absolute;
-        top: 50%;
-        left: 30px;
-        transform: translateY(-50%);
-      }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key {
-        font-size: 14px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: 20px;
-      }
-      input {
-        padding-left: 68px;
-        width: 100%;
-        height: 100%;
-        -moz-border-radius: 6px;
-        -webkit-border-radius: 6px;
-        border-radius: 6px;
-        border: none;
-      }
-      input::-webkit-input-placeholder {
-        color: $form-placeholder;
-      }
-      input:-moz-placeholder {
-        color: $form-placeholder;
-      }
-      input::-moz-placeholder {
-        color: $form-placeholder;
-      }
-      input:-ms-input-placeholder {
-        color: $form-placeholder;
-      }
-    }
-  }
+.social-buttons {
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 /* ==========================================================================

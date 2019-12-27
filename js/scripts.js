@@ -99,8 +99,10 @@ $(document).ready(function () {
                     "top": "26px",
                 });
                 $('header .navicon').css({
-                    "top": "34px",
+                    "top": "24px",
                 });
+                $('.site-title').show()
+
             } else {
                 $('section.navigation').removeClass('fixed');
                 $('header').css({
@@ -113,6 +115,7 @@ $(document).ready(function () {
                 $('header .navicon').css({
                     "top": "48px",
                 });
+                $('.site-title').hide()
             }
         });
     });
@@ -128,7 +131,7 @@ $(document).ready(function () {
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top - 90
-                    }, 2000);
+                    }, 1000);
                     return false;
                 }
             }
