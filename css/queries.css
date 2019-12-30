@@ -23,6 +23,7 @@
 /* Responsive nav kicks in */
 @media screen and (max-width: 991px) {
     .site-title {
+        display: visible;
         text-align: center;
         font-size: 30px;
         margin-right: 0px;
