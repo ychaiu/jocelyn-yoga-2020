@@ -22,6 +22,10 @@
 
 /* Responsive nav kicks in */
 @media screen and (max-width: 991px) {
+    .smallscreen-margin {
+        margin-top: 30px;
+    }
+
     .site-title {
         display: visible;
         text-align: center;
