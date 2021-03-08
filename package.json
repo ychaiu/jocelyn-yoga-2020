@@ -25,11 +25,8 @@
     "gulp-uglify": "^3.0.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.2",
     "animate.css": "^3.5.2",
+    "font-awesome": "^4.7.0",
     "waypoints": "^4.0.1"
-  },
-  "resolutions": {
-    "graceful-fs": "^4.2.4"
   }
 }
